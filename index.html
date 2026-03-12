@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Modern Demo Website</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+/* Navbar */
+
+header{
+background:#2c3e50;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+}
+
+nav a{
+color:white;
+margin:0 10px;
+text-decoration:none;
+font-size:18px;
+}
+
+nav a:hover{
+color:#1abc9c;
+}
+
+/* Hero */
+
+.hero{
+height:90vh;
+background:linear-gradient(45deg,#16a085,#27ae60);
+color:white;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.hero button{
+padding:12px 25px;
+font-size:18px;
+border:none;
+background:white;
+cursor:pointer;
+border-radius:5px;
+}
+
+.hero button:hover{
+background:#eee;
+}
+
+/* Services */
+
+.services{
+padding:60px;
+text-align:center;
+background:#f4f4f4;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+width:250px;
+margin:20px;
+padding:20px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+border-radius:8px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* Gallery */
+
+.gallery{
+padding:60px;
+text-align:center;
+}
+
+.gallery img{
+width:250px;
+margin:10px;
+border-radius:10px;
+}
+
+/* Contact */
+
+.contact{
+background:#f4f4f4;
+padding:60px;
+text-align:center;
+}
+
+input, textarea{
+width:250px;
+padding:10px;
+margin:8px;
+}
+
+button{
+padding:10px 20px;
+background:#27ae60;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+/* Footer */
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>MyWebsite</h2>
+
+<nav>
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+
+<section class="hero">
+
+<h1>Build Amazing Websites</h1>
+<p>HTML • CSS • JavaScript Demo Page</p>
+
+<button onclick="showMessage()">Click Me</button>
+
+</section>
+
+
+<section class="services" id="services">
+
+<h2>Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Web Design</h3>
+<p>Beautiful responsive websites.</p>
+</div>
+
+<div class="card">
+<h3>SEO</h3>
+<p>Improve Google ranking.</p>
+</div>
+
+<div class="card">
+<h3>Digital Marketing</h3>
+<p>Grow your online business.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="gallery" id="gallery">
+
+<h2>Gallery</h2>
+
+<img src="https://picsum.photos/250?1">
+<img src="https://picsum.photos/250?2">
+<img src="https://picsum.photos/250?3">
+<img src="https://picsum.photos/250?4">
+
+</section>
+
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<input type="text" placeholder="Your Name"><br>
+<input type="email" placeholder="Email"><br>
+<textarea placeholder="Message"></textarea><br>
+
+<button onclick="sendMessage()">Send</button>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 MyWebsite</p>
+
+</footer>
+
+
+<script>
+
+function showMessage(){
+alert("Welcome to my website!");
+}
+
+function sendMessage(){
+alert("Your message sent successfully!");
+}
+
+</script>
+
+</body>
+</html>
